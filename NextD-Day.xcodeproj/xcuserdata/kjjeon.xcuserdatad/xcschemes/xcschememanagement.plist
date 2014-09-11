@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>NextD-DayWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>F72AF47219C13A9E0043652A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F72AF48619C13AC40043652A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

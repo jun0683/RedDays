@@ -10,9 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
                             
+	@IBOutlet weak var DDayLabel: UILabel!
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
+		var ContentSize : CGSize = self.preferredContentSize
+		NSLog("%f", ContentSize.height)
+		self.preferredContentSize = ContentSize
+		
+		
+		let t = NextDDay()
+		println("\(t.NextD())")
+		DDayLabel.text = "D-\(t.NextD())"
+		
 	}
 
 	override func didReceiveMemoryWarning() {
