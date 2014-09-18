@@ -90,7 +90,7 @@ class NextDDay
 		man.Lun2Sol(currentDate.year, m: 8, d: 15)
 		restdays.append(MakeDDay(man.sy, month: man.sm, day: man.sd, str: "추석"))
 		restdays.sort({ $0.date.compare($1.date) == NSComparisonResult.OrderedAscending })
-		println(restdays)
+//		println(restdays)
 	}
 	
 	func MakeDDay(yaer:Int ,month:Int ,day:Int ,str:String)->DDay

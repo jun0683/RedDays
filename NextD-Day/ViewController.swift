@@ -35,9 +35,8 @@ class ViewController: UIViewController {
 		
 		let size = CGSize(width: 300, height: 200)
 		
-		println(next.CurrentNextDDayCount())
-		println("\(next.NextDayCounter())")
-		//		DDayLabel.text = "D-\(t.NextDayCounter())"
+//		println(next.CurrentNextDDayCount())
+//		println("\(next.NextDayCounter())")
 		for i in 0..<next.CurrentNextDDayCount()
 		{
 			var label1:UILabel = UILabel(frame: CGRect(x: bound.width/2 - size.width/2 + bound.width * CGFloat(i), y: bound.height/2 - size.height, width:size.width , height:size.height ))
@@ -56,8 +55,8 @@ class ViewController: UIViewController {
 			DDayScrollView.addSubview(label1)
 			DDayScrollView.addSubview(label2)
 			
-			println("next \(i) : \(next.NextDayCounter(index:i))")
-			println("next \(i) : \(next.NextDayStr(index:i))")
+//			println("next \(i) : \(next.NextDayCounter(index:i))")
+//			println("next \(i) : \(next.NextDayStr(index:i))")
 		}
 		let settings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Badge, categories: nil)
 		UIApplication.sharedApplication().registerUserNotificationSettings(settings)
