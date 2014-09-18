@@ -2,7 +2,7 @@
 //  NextD_DayTests.swift
 //  NextD-DayTests
 //
-//  Created by 국진 전 on 2014. 9. 11..
+//  Created by honggu on 2014. 9. 11..
 //  Copyright (c) 2014년 honggu. All rights reserved.
 //
 

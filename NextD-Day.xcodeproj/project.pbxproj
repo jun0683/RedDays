@@ -18,6 +18,10 @@
 		F72AF49419C13AC40043652A /* NextD-DayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F72AF48719C13AC40043652A /* NextD-DayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F72AF49C19C1401E0043652A /* NextD-Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AF49B19C1401E0043652A /* NextD-Day.swift */; };
 		F72AF49D19C1401E0043652A /* NextD-Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AF49B19C1401E0043652A /* NextD-Day.swift */; };
+		F730B1FF19C6AB70008A2EBE /* Manse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F730B1FE19C6AB70008A2EBE /* Manse.swift */; };
+		F730B20019C6B816008A2EBE /* Manse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F730B1FE19C6AB70008A2EBE /* Manse.swift */; };
+		F7AEE9C819C271010092E656 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7AEE9C719C271010092E656 /* Foundation.framework */; };
+		F7AEE9C919C271210092E656 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7AEE9C719C271010092E656 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,8 @@
 		F72AF48E19C13AC40043652A /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		F72AF49019C13AC40043652A /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		F72AF49B19C1401E0043652A /* NextD-Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NextD-Day.swift"; sourceTree = "<group>"; };
+		F730B1FE19C6AB70008A2EBE /* Manse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manse.swift; sourceTree = "<group>"; };
+		F7AEE9C719C271010092E656 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7AEE9C919C271210092E656 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7AEE9C819C271010092E656 /* Foundation.framework in Frameworks */,
 				F72AF48A19C13AC40043652A /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +113,7 @@
 		F72AF45819C13A9E0043652A = {
 			isa = PBXGroup;
 			children = (
+				F730B1FE19C6AB70008A2EBE /* Manse.swift */,
 				F72AF49B19C1401E0043652A /* NextD-Day.swift */,
 				F72AF46319C13A9E0043652A /* NextD-Day */,
 				F72AF47619C13A9E0043652A /* NextD-DayTests */,
@@ -164,6 +173,7 @@
 		F72AF48819C13AC40043652A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7AEE9C719C271010092E656 /* Foundation.framework */,
 				F72AF48919C13AC40043652A /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
@@ -318,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F730B1FF19C6AB70008A2EBE /* Manse.swift in Sources */,
 				F72AF46919C13A9E0043652A /* ViewController.swift in Sources */,
 				F72AF46719C13A9E0043652A /* AppDelegate.swift in Sources */,
 				F72AF49C19C1401E0043652A /* NextD-Day.swift in Sources */,
@@ -337,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F72AF49D19C1401E0043652A /* NextD-Day.swift in Sources */,
+				F730B20019C6B816008A2EBE /* Manse.swift in Sources */,
 				F72AF48F19C13AC40043652A /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +472,7 @@
 				INFOPLIST_FILE = "NextD-Day/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -471,6 +484,7 @@
 				INFOPLIST_FILE = "NextD-Day/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -511,6 +525,8 @@
 		F72AF49819C13AC50043652A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -519,16 +535,20 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
 		F72AF49919C13AC50043652A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				INFOPLIST_FILE = "NextD-DayWidget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -551,6 +571,7 @@
 				F72AF47F19C13A9E0043652A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F72AF48019C13A9E0043652A /* Build configuration list for PBXNativeTarget "NextD-DayTests" */ = {
 			isa = XCConfigurationList;
@@ -559,6 +580,7 @@
 				F72AF48219C13A9E0043652A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F72AF49719C13AC50043652A /* Build configuration list for PBXNativeTarget "NextD-DayWidget" */ = {
 			isa = XCConfigurationList;
@@ -567,6 +589,7 @@
 				F72AF49919C13AC50043652A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
