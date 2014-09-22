@@ -40,7 +40,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func applicationWillTerminate(application: UIApplication!) {
 		// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 	}
-
-
+	
+	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool
+	{
+		UIApplication.sharedApplication().setMinimumBackgroundFetchInterval(UIApplicationBackgroundFetchIntervalMinimum)
+		
+		return true
+	}
+	
+	func application(application: UIApplication, performFetchWithCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+		NSLog("performFetchWithCompletionHandler")
+		completionHandler(UIBackgroundFetchResult.NoData)
+	}
+	
+	func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification)
+	{
+		NSLog("Recieved Notification %@", notification)
+		UIApplication.sharedApplication().cancelAllLocalNotifications()	
+		var notification = UILocalNotification()
+		notification.fireDate = NSDate().dateByAddingTimeInterval(60)
+		notification.repeatInterval = NSCalendarUnit.CalendarUnitMinute //CalendarUnitSecond //CalendarUnitDay
+		notification.hasAction = false
+		UIApplication.sharedApplication().scheduleLocalNotification(notification);
+	}
+	
 }
 

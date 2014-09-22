@@ -26,7 +26,6 @@ class ViewController: UIViewController {
 	{
 		let next = NextDDay()
 		var bound = UIScreen.mainScreen().bounds.size
-		println(DDayScrollView.contentSize)
 		DDayScrollView.pagingEnabled = true
 		DDayScrollView.alwaysBounceVertical = false
 		DDayScrollView.alwaysBounceHorizontal = false
@@ -34,6 +33,13 @@ class ViewController: UIViewController {
 		DDayScrollView.contentSize = CGSize(width: CGFloat(Int(bound.width) * next.CurrentNextDDayCount() ), height: 1)
 		
 		let size = CGSize(width: 300, height: 200)
+		
+		println(UIScreen.mainScreen())
+		println(bound)
+		println(DDayScrollView.contentSize)
+		println(self.view)
+		println(DDayScrollView)
+
 		
 //		println(next.CurrentNextDDayCount())
 //		println("\(next.NextDayCounter())")
@@ -61,6 +67,50 @@ class ViewController: UIViewController {
 		let settings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Badge, categories: nil)
 		UIApplication.sharedApplication().registerUserNotificationSettings(settings)
 		UIApplication.sharedApplication().applicationIconBadgeNumber = next.NextDayCounter()
+//		var notification = UILocalNotification()
+//		notification.fireDate = NSDate().dateByAddingTimeInterval(60)
+//		notification.repeatInterval = NSCalendarUnit.CalendarUnitMinute //CalendarUnitSecond //CalendarUnitDay
+//		notification.hasAction = false
+//		UIApplication.sharedApplication().scheduleLocalNotification(notification);
+		
+		// clear the badge on the icon
+//		UIApplication.sharedApplication().applicationIconBadgeNumber = 0
+		
+//		for i in 0...365
+//		{
+//			var local = UILocalNotification()
+//			local.fireDate = NSDate().dateByAddingTimeInterval(Double(i*2))
+//			local.repeatInterval = NSCalendarUnit.CalendarUnitMinute
+//			local.hasAction = false
+//			UIApplication.sharedApplication().applicationIconBadgeNumber = i
+//			UIApplication.sharedApplication().scheduleLocalNotification(local);
+//		}
+		
+		// first get a copy of all pending notifications (unfortunately you cannot 'modify' a pending notification)
+//		var pendingNotifications:NSArray = UIApplication.sharedApplication().scheduledLocalNotifications
+//		
+//		// if there are any pending notifications -> adjust their badge number
+//		if pendingNotifications.count != 0
+//		{
+//			println(pendingNotifications.count)
+//			// clear all pending notifications
+//			UIApplication.sharedApplication().cancelAllLocalNotifications()
+//			
+//			// the for loop will 'restore' the pending notifications, but with corrected badge numbers
+//			// note : a more advanced method could 'sort' the notifications first !!!
+//			var badgeNbr:Int = 1;
+//			
+//			for notification in pendingNotifications as [UILocalNotification]
+//			{
+//			// modify the badgeNumber
+//				notification.applicationIconBadgeNumber = badgeNbr++;
+//			println(badgeNbr)
+//			// schedule 'again'
+//				UIApplication.sharedApplication().scheduleLocalNotification(notification)
+//			}
+//		}
+//
+		
 	}
 }
 

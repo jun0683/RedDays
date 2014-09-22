@@ -17,10 +17,10 @@ class TodayViewController: UIViewController {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-//		var ContentSize : CGSize = self.preferredContentSize
-//		NSLog("%f", ContentSize.height)
-//		ContentSize.height = 100
-//		self.preferredContentSize = ContentSize
+		var ContentSize : CGSize = self.preferredContentSize
+		NSLog("%f", ContentSize.height)
+		ContentSize.height = 100
+		self.preferredContentSize = ContentSize
 		
     }
     
