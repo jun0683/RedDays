@@ -11,15 +11,80 @@ import UIKit
 class ViewController: UIViewController {
                             
 	@IBOutlet weak var DDayScrollView: UIScrollView!
+	let next = NextDDay()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		DDayUiInit()
+		RegisterNoti()
 	}
 
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
+	}
+	
+	func GetBadgeNumberNextDay(index:(Int) = 0) ->Int
+	{
+		var BadgeNumber = 0
+		if index == 0
+		{
+			BadgeNumber = next.NextDayCounter(index: index)
+			
+		}
+		else
+		{
+			BadgeNumber = next.NextDayCounter(index: index) - next.NextDayCounter(index: index-1)
+		}
+		return BadgeNumber
+	}
+	
+	func RegisterNoti()
+	{
+		let settings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Badge, categories: nil)
+		UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+		
+//		println("start")
+		
+		UIApplication.sharedApplication().applicationIconBadgeNumber = next.NextDayCounter()
+		
+		var notis = [UILocalNotification]()
+		//d-day 갯수
+		
+		
+		var currentDate:NSDateComponents  = NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitDay | NSCalendarUnit.CalendarUnitMonth | NSCalendarUnit.CalendarUnitYear, fromDate: NSDate())
+		
+		var datecomponet = NSDateComponents()
+		datecomponet.day = currentDate.day
+		datecomponet.month = currentDate.month
+		datecomponet.year = currentDate.year
+		println(NSCalendar.currentCalendar().dateFromComponents(datecomponet)!)
+		
+		
+		var addDay = 0
+		for i in 0..<next.CurrentNextDDayCount()
+		{
+			
+			//날짜에 맞는 뱃지
+			for j in 0..<GetBadgeNumberNextDay(index: i)
+			{
+				var local = UILocalNotification()
+				
+				let addcomponents:NSDateComponents = NSDateComponents()
+				addcomponents.day = addDay;
+				let newDate = NSCalendar.currentCalendar().dateByAddingComponents(addcomponents, toDate: NSCalendar.currentCalendar().dateFromComponents(datecomponet)! , options: nil)
+				
+				local.fireDate = newDate
+				local.timeZone = NSTimeZone.defaultTimeZone()
+				local.hasAction = false
+				
+				local.applicationIconBadgeNumber = GetBadgeNumberNextDay(index: i) - j
+				notis.append(local)
+				addDay++
+			}
+		}
+		
+		UIApplication.sharedApplication().scheduledLocalNotifications = notis
 	}
 	
 	func DDayUiInit()
@@ -64,53 +129,5 @@ class ViewController: UIViewController {
 //			println("next \(i) : \(next.NextDayCounter(index:i))")
 //			println("next \(i) : \(next.NextDayStr(index:i))")
 		}
-		let settings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Badge, categories: nil)
-		UIApplication.sharedApplication().registerUserNotificationSettings(settings)
-		UIApplication.sharedApplication().applicationIconBadgeNumber = next.NextDayCounter()
-//		var notification = UILocalNotification()
-//		notification.fireDate = NSDate().dateByAddingTimeInterval(60)
-//		notification.repeatInterval = NSCalendarUnit.CalendarUnitMinute //CalendarUnitSecond //CalendarUnitDay
-//		notification.hasAction = false
-//		UIApplication.sharedApplication().scheduleLocalNotification(notification);
-		
-		// clear the badge on the icon
-//		UIApplication.sharedApplication().applicationIconBadgeNumber = 0
-		
-//		for i in 0...365
-//		{
-//			var local = UILocalNotification()
-//			local.fireDate = NSDate().dateByAddingTimeInterval(Double(i*2))
-//			local.repeatInterval = NSCalendarUnit.CalendarUnitMinute
-//			local.hasAction = false
-//			UIApplication.sharedApplication().applicationIconBadgeNumber = i
-//			UIApplication.sharedApplication().scheduleLocalNotification(local);
-//		}
-		
-		// first get a copy of all pending notifications (unfortunately you cannot 'modify' a pending notification)
-//		var pendingNotifications:NSArray = UIApplication.sharedApplication().scheduledLocalNotifications
-//		
-//		// if there are any pending notifications -> adjust their badge number
-//		if pendingNotifications.count != 0
-//		{
-//			println(pendingNotifications.count)
-//			// clear all pending notifications
-//			UIApplication.sharedApplication().cancelAllLocalNotifications()
-//			
-//			// the for loop will 'restore' the pending notifications, but with corrected badge numbers
-//			// note : a more advanced method could 'sort' the notifications first !!!
-//			var badgeNbr:Int = 1;
-//			
-//			for notification in pendingNotifications as [UILocalNotification]
-//			{
-//			// modify the badgeNumber
-//				notification.applicationIconBadgeNumber = badgeNbr++;
-//			println(badgeNbr)
-//			// schedule 'again'
-//				UIApplication.sharedApplication().scheduleLocalNotification(notification)
-//			}
-//		}
-//
-		
 	}
 }
-
