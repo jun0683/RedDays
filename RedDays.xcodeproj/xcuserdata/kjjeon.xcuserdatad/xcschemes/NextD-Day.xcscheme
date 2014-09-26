@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F72AF46019C13A9E0043652A"
-               BuildableName = "NextD-Day.app"
-               BlueprintName = "NextD-Day"
-               ReferencedContainer = "container:NextD-Day.xcodeproj">
+               BuildableName = "RedDays.app"
+               BlueprintName = "RedDays"
+               ReferencedContainer = "container:RedDays.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F72AF47219C13A9E0043652A"
-               BuildableName = "NextD-DayTests.xctest"
-               BlueprintName = "NextD-DayTests"
-               ReferencedContainer = "container:NextD-Day.xcodeproj">
+               BuildableName = "RedDaysTests.xctest"
+               BlueprintName = "RedDaysTests"
+               ReferencedContainer = "container:RedDays.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F72AF47219C13A9E0043652A"
-               BuildableName = "NextD-DayTests.xctest"
-               BlueprintName = "NextD-DayTests"
-               ReferencedContainer = "container:NextD-Day.xcodeproj">
+               BuildableName = "RedDaysTests.xctest"
+               BlueprintName = "RedDaysTests"
+               ReferencedContainer = "container:RedDays.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F72AF46019C13A9E0043652A"
-            BuildableName = "NextD-Day.app"
-            BlueprintName = "NextD-Day"
-            ReferencedContainer = "container:NextD-Day.xcodeproj">
+            BuildableName = "RedDays.app"
+            BlueprintName = "RedDays"
+            ReferencedContainer = "container:RedDays.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F72AF46019C13A9E0043652A"
-            BuildableName = "NextD-Day.app"
-            BlueprintName = "NextD-Day"
-            ReferencedContainer = "container:NextD-Day.xcodeproj">
+            BuildableName = "RedDays.app"
+            BlueprintName = "RedDays"
+            ReferencedContainer = "container:RedDays.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F72AF46019C13A9E0043652A"
-            BuildableName = "NextD-Day.app"
-            BlueprintName = "NextD-Day"
-            ReferencedContainer = "container:NextD-Day.xcodeproj">
+            BuildableName = "RedDays.app"
+            BlueprintName = "RedDays"
+            ReferencedContainer = "container:RedDays.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

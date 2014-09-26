@@ -15,7 +15,7 @@
 		F72AF48A19C13AC40043652A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72AF48919C13AC40043652A /* NotificationCenter.framework */; };
 		F72AF48F19C13AC40043652A /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AF48E19C13AC40043652A /* TodayViewController.swift */; };
 		F72AF49119C13AC40043652A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72AF49019C13AC40043652A /* MainInterface.storyboard */; };
-		F72AF49419C13AC40043652A /* NextD-DayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F72AF48719C13AC40043652A /* NextD-DayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F72AF49419C13AC40043652A /* RedDaysWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F72AF48719C13AC40043652A /* RedDaysWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F72AF49C19C1401E0043652A /* NextD-Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AF49B19C1401E0043652A /* NextD-Day.swift */; };
 		F72AF49D19C1401E0043652A /* NextD-Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AF49B19C1401E0043652A /* NextD-Day.swift */; };
 		F730B1FF19C6AB70008A2EBE /* Manse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F730B1FE19C6AB70008A2EBE /* Manse.swift */; };
@@ -55,7 +55,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				F72AF49419C13AC40043652A /* NextD-DayWidget.appex in Embed App Extensions */,
+				F72AF49419C13AC40043652A /* RedDaysWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,16 +63,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F72AF46119C13A9E0043652A /* NextD-Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NextD-Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72AF46119C13A9E0043652A /* RedDays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedDays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72AF46519C13A9E0043652A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F72AF46619C13A9E0043652A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F72AF46819C13A9E0043652A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F72AF46B19C13A9E0043652A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F72AF46D19C13A9E0043652A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F72AF47319C13A9E0043652A /* NextD-DayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NextD-DayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72AF47319C13A9E0043652A /* RedDaysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedDaysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72AF47819C13A9E0043652A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F72AF47919C13A9E0043652A /* NextD_DayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextD_DayTests.swift; sourceTree = "<group>"; };
-		F72AF48719C13AC40043652A /* NextD-DayWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NextD-DayWidget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72AF48719C13AC40043652A /* RedDaysWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RedDaysWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72AF48919C13AC40043652A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		F72AF48D19C13AC40043652A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F72AF48E19C13AC40043652A /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -126,9 +126,9 @@
 		F72AF46219C13A9E0043652A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F72AF46119C13A9E0043652A /* NextD-Day.app */,
-				F72AF47319C13A9E0043652A /* NextD-DayTests.xctest */,
-				F72AF48719C13AC40043652A /* NextD-DayWidget.appex */,
+				F72AF46119C13A9E0043652A /* RedDays.app */,
+				F72AF47319C13A9E0043652A /* RedDaysTests.xctest */,
+				F72AF48719C13AC40043652A /* RedDaysWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,9 +200,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F72AF46019C13A9E0043652A /* NextD-Day */ = {
+		F72AF46019C13A9E0043652A /* RedDays */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F72AF47D19C13A9E0043652A /* Build configuration list for PBXNativeTarget "NextD-Day" */;
+			buildConfigurationList = F72AF47D19C13A9E0043652A /* Build configuration list for PBXNativeTarget "RedDays" */;
 			buildPhases = (
 				F72AF45D19C13A9E0043652A /* Sources */,
 				F72AF45E19C13A9E0043652A /* Frameworks */,
@@ -215,14 +215,14 @@
 				F72AF49319C13AC40043652A /* PBXTargetDependency */,
 				F72AF49619C13AC50043652A /* PBXTargetDependency */,
 			);
-			name = "NextD-Day";
+			name = RedDays;
 			productName = "NextD-Day";
-			productReference = F72AF46119C13A9E0043652A /* NextD-Day.app */;
+			productReference = F72AF46119C13A9E0043652A /* RedDays.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F72AF47219C13A9E0043652A /* NextD-DayTests */ = {
+		F72AF47219C13A9E0043652A /* RedDaysTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F72AF48019C13A9E0043652A /* Build configuration list for PBXNativeTarget "NextD-DayTests" */;
+			buildConfigurationList = F72AF48019C13A9E0043652A /* Build configuration list for PBXNativeTarget "RedDaysTests" */;
 			buildPhases = (
 				F72AF46F19C13A9E0043652A /* Sources */,
 				F72AF47019C13A9E0043652A /* Frameworks */,
@@ -233,14 +233,14 @@
 			dependencies = (
 				F72AF47519C13A9E0043652A /* PBXTargetDependency */,
 			);
-			name = "NextD-DayTests";
+			name = RedDaysTests;
 			productName = "NextD-DayTests";
-			productReference = F72AF47319C13A9E0043652A /* NextD-DayTests.xctest */;
+			productReference = F72AF47319C13A9E0043652A /* RedDaysTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F72AF48619C13AC40043652A /* NextD-DayWidget */ = {
+		F72AF48619C13AC40043652A /* RedDaysWidget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F72AF49719C13AC50043652A /* Build configuration list for PBXNativeTarget "NextD-DayWidget" */;
+			buildConfigurationList = F72AF49719C13AC50043652A /* Build configuration list for PBXNativeTarget "RedDaysWidget" */;
 			buildPhases = (
 				F72AF48319C13AC40043652A /* Sources */,
 				F72AF48419C13AC40043652A /* Frameworks */,
@@ -250,9 +250,9 @@
 			);
 			dependencies = (
 			);
-			name = "NextD-DayWidget";
+			name = RedDaysWidget;
 			productName = "NextD-DayWidget";
-			productReference = F72AF48719C13AC40043652A /* NextD-DayWidget.appex */;
+			productReference = F72AF48719C13AC40043652A /* RedDaysWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -276,7 +276,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F72AF45C19C13A9E0043652A /* Build configuration list for PBXProject "NextD-Day" */;
+			buildConfigurationList = F72AF45C19C13A9E0043652A /* Build configuration list for PBXProject "RedDays" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -289,9 +289,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F72AF46019C13A9E0043652A /* NextD-Day */,
-				F72AF47219C13A9E0043652A /* NextD-DayTests */,
-				F72AF48619C13AC40043652A /* NextD-DayWidget */,
+				F72AF46019C13A9E0043652A /* RedDays */,
+				F72AF47219C13A9E0043652A /* RedDaysTests */,
+				F72AF48619C13AC40043652A /* RedDaysWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -358,17 +358,17 @@
 /* Begin PBXTargetDependency section */
 		F72AF47519C13A9E0043652A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F72AF46019C13A9E0043652A /* NextD-Day */;
+			target = F72AF46019C13A9E0043652A /* RedDays */;
 			targetProxy = F72AF47419C13A9E0043652A /* PBXContainerItemProxy */;
 		};
 		F72AF49319C13AC40043652A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F72AF48619C13AC40043652A /* NextD-DayWidget */;
+			target = F72AF48619C13AC40043652A /* RedDaysWidget */;
 			targetProxy = F72AF49219C13AC40043652A /* PBXContainerItemProxy */;
 		};
 		F72AF49619C13AC50043652A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F72AF48619C13AC40043652A /* NextD-DayWidget */;
+			target = F72AF48619C13AC40043652A /* RedDaysWidget */;
 			targetProxy = F72AF49519C13AC50043652A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -471,7 +471,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "NextD-Day/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RedDays;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
@@ -483,7 +483,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "NextD-Day/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RedDays;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
@@ -502,7 +502,7 @@
 				);
 				INFOPLIST_FILE = "NextD-DayTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RedDaysTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextD-Day.app/NextD-Day";
 			};
 			name = Debug;
@@ -517,7 +517,7 @@
 				);
 				INFOPLIST_FILE = "NextD-DayTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RedDaysTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextD-Day.app/NextD-Day";
 			};
 			name = Release;
@@ -533,7 +533,7 @@
 				);
 				INFOPLIST_FILE = "NextD-DayWidget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RedDaysWidget;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
@@ -546,7 +546,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				INFOPLIST_FILE = "NextD-DayWidget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RedDaysWidget;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
@@ -555,7 +555,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F72AF45C19C13A9E0043652A /* Build configuration list for PBXProject "NextD-Day" */ = {
+		F72AF45C19C13A9E0043652A /* Build configuration list for PBXProject "RedDays" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F72AF47B19C13A9E0043652A /* Debug */,
@@ -564,7 +564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F72AF47D19C13A9E0043652A /* Build configuration list for PBXNativeTarget "NextD-Day" */ = {
+		F72AF47D19C13A9E0043652A /* Build configuration list for PBXNativeTarget "RedDays" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F72AF47E19C13A9E0043652A /* Debug */,
@@ -573,7 +573,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F72AF48019C13A9E0043652A /* Build configuration list for PBXNativeTarget "NextD-DayTests" */ = {
+		F72AF48019C13A9E0043652A /* Build configuration list for PBXNativeTarget "RedDaysTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F72AF48119C13A9E0043652A /* Debug */,
@@ -582,7 +582,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F72AF49719C13AC50043652A /* Build configuration list for PBXNativeTarget "NextD-DayWidget" */ = {
+		F72AF49719C13AC50043652A /* Build configuration list for PBXNativeTarget "RedDaysWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F72AF49819C13AC50043652A /* Debug */,
