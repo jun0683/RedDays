@@ -273,6 +273,7 @@
 					};
 					F72AF48619C13AC40043652A = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = QWGAB5B83D;
 					};
 				};
 			};
@@ -503,7 +504,7 @@
 				INFOPLIST_FILE = "NextD-DayTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = RedDaysTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextD-Day.app/NextD-Day";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedDays.app/RedDays";
 			};
 			name = Debug;
 		};
@@ -518,7 +519,7 @@
 				INFOPLIST_FILE = "NextD-DayTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = RedDaysTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextD-Day.app/NextD-Day";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedDays.app/RedDays";
 			};
 			name = Release;
 		};
