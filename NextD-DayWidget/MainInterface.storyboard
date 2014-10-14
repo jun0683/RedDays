@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFO-X1-9b2">
-                                <rect key="frame" x="91" y="59" width="139" height="21"/>
+                                <rect key="frame" x="16" y="59" width="288" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="rJL-Kn-NtX"/>
                                 </constraints>
@@ -35,10 +35,12 @@
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="GcN-lo-r42" secondAttribute="centerX" id="25g-JV-5YM"/>
+                            <constraint firstItem="RFO-X1-9b2" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="7wQ-5E-iRH"/>
                             <constraint firstItem="RFO-X1-9b2" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="75" id="AK8-z0-mjM"/>
                             <constraint firstItem="GcN-lo-r42" firstAttribute="centerX" secondItem="RFO-X1-9b2" secondAttribute="centerX" id="QoI-y3-rhO"/>
                             <constraint firstItem="RFO-X1-9b2" firstAttribute="top" relation="lessThanOrEqual" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="8" id="flK-bI-NXI"/>
                             <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="4" id="iMn-Bq-tGU"/>
+                            <constraint firstItem="RFO-X1-9b2" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="oXh-a8-VI8"/>
                             <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="vH4-YU-srU"/>
                         </constraints>
                     </view>
